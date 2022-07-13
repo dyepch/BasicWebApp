@@ -14,7 +14,6 @@ public class QueryProcessor {
             return "Daniela";
         } else if (query.contains("plus")) {
             // We get an array of words by splitting the whole string
-            query = query.replace(",", " ");
             String[] words = query.split(" ");
             int sum = 0;
             // Iterate on each word of the array to detect which contains a number
