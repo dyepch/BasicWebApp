@@ -28,7 +28,16 @@ public class QueryProcessor {
             }
             return String.valueOf(sum);
         } else if (query.contains("largest")) {
-
+            int max = -1;
+            String[] words = query.split(" ");
+            for (String word : words) {
+                try {
+                    int number = Integer.parseInt(word);
+                    max = number > max ? number : max;
+                } catch(Exception e) {
+                    //
+                }
+            }
         }
         // Add comment
         return "";
