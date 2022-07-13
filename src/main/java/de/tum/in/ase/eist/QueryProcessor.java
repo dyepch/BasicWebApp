@@ -38,6 +38,7 @@ public class QueryProcessor {
                     //
                 }
             }
+            return String.valueOf(max);
         }
         // Add comment
         return "";
