@@ -14,7 +14,7 @@ public class QueryProcessor {
             return "Daniela";
         } else if (query.contains("plus")) {
             // We get an array of words by splitting the whole string
-            String[] words = query.split("");
+            String[] words = query.split(" ");
             int sum = 0;
             // Iterate on each word of the array to detect which contains a number
             for (String word : words) {
@@ -27,7 +27,9 @@ public class QueryProcessor {
             }
             return String.valueOf(sum);
         } else if (query.contains("largest")) {
+
         }
+        // Add comment
         return "";
-        }
     }
+}
